@@ -1,0 +1,8 @@
+.btn-theme{
+  height:58px;
+  width:150px;
+  border:none;
+  font-size: 13px;
+  background-color: var(--primary-color);
+  margin-right: 5px;
+}

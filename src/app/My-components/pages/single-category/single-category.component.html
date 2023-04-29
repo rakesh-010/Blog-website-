@@ -1,0 +1,17 @@
+<section class="bg-theme p-5">
+  <div class="container">
+    <div class="text-white">
+      <h1>{{category}}</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 mb-3" *ngFor="let categoryPost of categoryPosts|async">
+        <app-post-card [postData]="categoryPost"></app-post-card>
+      </div>
+    </div>
+  </div>
+</section>
